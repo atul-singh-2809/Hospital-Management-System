@@ -3,13 +3,13 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 import java.util.*;
-public class pqr extends JFrame implements ActionListener
+public class booking extends JFrame implements ActionListener
 {
     JLabel l1,l2,l3;
     JButton b1;
     JTextField t1,t2,t3;
     String n;
-    public pqr(String m)
+    public booking(String m)
     {
         n=m;
         setLayout(new FlowLayout());
@@ -56,7 +56,7 @@ public class pqr extends JFrame implements ActionListener
                 String sq1 = "insert into "+n+" (id, full_name, age, contact, date) values ('"+max+"', '"+s1+"', '"+age+"', '"+pno+"', '"+da+"')";
                 myStmt.executeUpdate(sq1);
                 System.out.println("Insert Successful");
-                lmn l=new lmn();
+                conform l=new conform();
                 l.setBounds(60,120,250,65);
                 l.setVisible(true);
                 l.setTitle("Thankyou!!");

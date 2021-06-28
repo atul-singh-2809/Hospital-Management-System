@@ -4,7 +4,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import java.io.*;
-public class abc extends JFrame implements ActionListener
+public class Main1 extends JFrame implements ActionListener
 {
     JLabel l1,l2;
     JButton b1;
@@ -26,7 +26,7 @@ public class abc extends JFrame implements ActionListener
         }
         if(count==5)
         {
-            xyz x=new xyz();
+            recipt x=new recipt();
             x.setBounds(60,120,250,65);
             x.setVisible(true);
             x.setTitle("Sorry");
@@ -34,14 +34,14 @@ public class abc extends JFrame implements ActionListener
         }
         else
         {
-            pqr p=new pqr(m);
+            booking p=new booking(m);
             p.setSize(350,350);
             p.setVisible(true);
             p.setTitle("Hospital Management System");
             p.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         }
     }
-    public abc(String field[],String o)
+    public Main1(String field[],String o)
     {
         setLayout(null);
         l1=new JLabel("Select Doctor");
@@ -88,37 +88,37 @@ public class abc extends JFrame implements ActionListener
             try
             {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jp", "root", "Mohit@87094");
+                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jp", "root", "Atulsingh@2809");
                 Statement myStmt = myConn.createStatement();
                 int count=0;
                 if(f==1)
                 {
-                    abc.test(myStmt,"harsh_domadia");
+                    Main1.test(myStmt,"harsh_domadia");
                 }
                 else
                 if(f==2)
                 {
-                    abc.test(myStmt,"jay_gala");
+                    Main1.test(myStmt,"jay_gala");
                 }
                 else
                 if(f==3)
                 {
-                    abc.test(myStmt,"tushar_kadaam");
+                    Main1.test(myStmt,"tushar_kadaam");
                 }
                 else
                 if(f==4)
                 {
-                    abc.test(myStmt,"sangram_desai");
+                    Main1.test(myStmt,"sangaram_desai");
                 }
                 else
                 if(f==5)
                 {
-                    abc.test(myStmt,"jasdeep_grover");
+                    Main1.test(myStmt,"jasdeep_grover");
                 }
                 else
                 if(f==6)
                 {
-                    abc.test(myStmt,"atharva_gole");
+                    Main1.test(myStmt,"atharva_gole");
                 }
             }
             catch(Exception e)

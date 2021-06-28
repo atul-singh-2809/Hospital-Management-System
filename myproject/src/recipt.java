@@ -1,13 +1,13 @@
 import javax.swing.*; 
 import java.awt.*;
 import java.awt.event.*;
-public class lmn extends JFrame
+public class recipt extends JFrame
 {
-    JLabel l1;
-    public lmn()
+    JLabel l1;  
+    public recipt()
     {
         setLayout(new FlowLayout());
-        l1=new JLabel("Appointment Booked Successfully");
+        l1=new JLabel("Appointments are full");
         add(l1);
     }
 }

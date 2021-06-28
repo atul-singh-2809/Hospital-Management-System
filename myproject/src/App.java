@@ -10,7 +10,7 @@ public class App extends JFrame implements ActionListener{
     public static void wake(String m,String n,String o)
     {
         String field[]={m,n};
-        abc a=new abc(field,o);
+        Main1 a=new Main1(field,o);
         a.setSize(350,350);
         a.setVisible(true);
         a.setTitle("Hospital Management System");
