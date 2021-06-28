@@ -45,7 +45,7 @@ public class booking extends JFrame implements ActionListener
             {
                 int max=0;
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jp", "root", "Mohit@87094");
+                Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jp", "root", "Atulsingh@2809");
                 Statement myStmt = myConn.createStatement();
                 ResultSet myRs = myStmt.executeQuery("select max(id) from jp."+n);
                 if(myRs.next())
